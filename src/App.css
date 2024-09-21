@@ -1,0 +1,11 @@
+.app-container{
+    display: flex;
+    width: 600px;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
