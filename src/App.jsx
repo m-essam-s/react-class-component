@@ -1,23 +1,20 @@
 import './App.css'
 
 import { Component } from 'react'
-import PropTypes from 'prop-types'
-import Header from './components/Header'
-import Greeting from './components/Greeting'
+import GreetingApp from './App/Greeting/GreetingApp'
+import StateApp from './App/State/StateApp'
+import CounterApp from './App/Counter/CounterApp'
+
 class App extends Component {
   render() {
     return (
-      <div className='app-container'>
-        <h1>{this.props.type} Component</h1>
-        <Header username="John Doe" />   
-        <Greeting />
-      </div>
+      <main>
+        <GreetingApp/>
+        <StateApp/>
+        <CounterApp/>
+      </main>
     )
   }
-}
-
-App.propTypes = {
-  type: PropTypes.string.isRequired,
 }
 
 export default App
